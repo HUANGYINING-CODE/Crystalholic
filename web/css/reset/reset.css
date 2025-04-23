@@ -223,23 +223,15 @@ body {
 }
 
 .feedback-box {
-  margin: 0 0 142px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.feedback-arrowleft {
+.feedback-arrow {
   width: 48px;
   height: 48px;
-  margin: 0 23px 0 0;
-}
-
-.feedback-arrowright {
-  width: 48px;
-  height: 48px;
-  margin: 0 0 0 23px;
 }
 
 .feedback {

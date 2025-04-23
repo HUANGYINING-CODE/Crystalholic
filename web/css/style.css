@@ -223,15 +223,23 @@ body {
 }
 
 .feedback-box {
+  margin: 0 0 142px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.feedback-arrow {
+.feedback-arrowleft {
   width: 48px;
   height: 48px;
+  margin: 0 23px 0 0;
+}
+
+.feedback-arrowright {
+  width: 48px;
+  height: 48px;
+  margin: 0 0 0 23px;
 }
 
 .feedback {
@@ -292,6 +300,67 @@ body {
   height: 110px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*憑直覺抽一張吧*/
+.section-tarotcard {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 60px;
+}
+.section-tarotcard .tarotcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+.section-tarotcard #tarotcard-title {
+  width: 344px;
+  height: 42px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.section-tarotcard .dimond-left {
+  width: 22px;
+  height: 39.22px;
+  margin: 0 50px 0 0;
+}
+.section-tarotcard .dimond-right {
+  width: 22px;
+  height: 39.22px;
+  margin: 0 0 0 50px;
+}
+.section-tarotcard #tarot-title {
+  color: #fff;
+  font-size: 24px;
+}
+.section-tarotcard #tarotcard-box {
+  width: 1279px;
+  height: 427px;
+  border: 1px solid white;
+}
+.section-tarotcard #tarotcard-btn {
+  display: flex;
+  padding: 20px 100px;
+  justify-content: center;
+  align-items: center;
+  /*樣式*/
+  color: #fff;
+  background-color: transparent;
+  border-radius: 1000px;
+  border: 2px solid #8750BF;
+  backdrop-filter: blur(2px);
+}
+
 /*專屬訂製Banner*/
 #custom {
   color: #fff;
@@ -304,9 +373,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-#custom img {
+#custom .dimond-left {
   width: 34px;
   height: 60px;
+  margin: 0 40px 0 0;
+}
+#custom .dimond-right {
+  width: 34px;
+  height: 60px;
+  margin: 0 0 0 40px;
 }
 #custom #title-all {
   display: flex;
@@ -337,6 +412,7 @@ body {
   font-size: 18px;
 }
 #custom button {
+  color: #fff;
   width: 264px;
   height: 57px;
   /* 玻璃擬態 */
