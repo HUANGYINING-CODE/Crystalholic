@@ -1,0 +1,348 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(69, 57, 157);
+}
+
+/*小百科title */
+.discovery-displaytitle {
+  width: 498px;
+  height: 78px;
+  margin: 54px auto 34px;
+  margin-top: 54 auto auto px;
+  display: flex;
+  align-items: center;
+}
+
+#titlediscovery {
+  /* color: #FFF; */
+  font-size: 28px;
+  width: 498px;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 水晶小百科----字體、裝飾顏色要改 */
+#section-crystaldiscovery {
+  color: #FFF;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* margin: none; */
+}
+
+/* 旋轉水晶 */
+.crystal-display {
+  width: 576px;
+  height: 691px;
+  border: 1px #FFF solid;
+}
+
+/* 小百科內文 */
+#section-crystaldiscovery {
+  margin: 54px 166px 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.section-crystaldiscovery {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.crystaldiscovery {
+  /* border: 3px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 水晶info */
+.crystal {
+  width: 600px;
+  height: 118px;
+  padding: 20px 35px;
+  /* border: 2px #FFF solid; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  /* 玻璃擬態 */
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
+  backdrop-filter: blur(2.5px);
+}
+
+.crystal-name {
+  width: 117px;
+  height: 78px;
+  padding: 0 24px 0 0;
+  border-right: 1px #FFF solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discovery-content {
+  font-size: 100%;
+  width: 389px;
+  height: 78px;
+  padding: 0 0 0 24px;
+  margin: none;
+}
+
+.crystal-enname {
+  font-size: 20px;
+}
+
+.crystal-chname {
+  font-size: 28px;
+}
+
+/* 主要功效 */
+.discovery-p1 {
+  width: 600px;
+  height: 164px;
+  padding: 20px 35px;
+  /* border: 2px #FFF solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* 玻璃擬態 */
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
+  backdrop-filter: blur(2.5px);
+}
+
+.discovery-title {
+  width: 530px;
+  height: 30px;
+  padding: 0 0 8px 0;
+  border-bottom: 1px #FFF solid;
+  display: flex;
+  align-items: center;
+}
+
+.discovery-title h2 {
+  font-size: 20px;
+}
+
+.discovery-p1content {
+  width: 530px;
+  height: 78px;
+  margin-top: 8px;
+}
+
+/* 適合人群 */
+.discovery-p2 {
+  width: 600px;
+  height: 138px;
+  padding: 20px 35px;
+  /* border: 2px #FFF solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* 玻璃擬態 */
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
+  backdrop-filter: blur(2.5px);
+}
+
+.discovery-p2content {
+  width: 530px;
+  height: 52px;
+  margin-top: 8px;
+}
+
+/* 建議水晶 */
+.discovery-p3 {
+  width: 600px;
+  height: 76px;
+  padding: 20px 35px;
+  gap: 32px;
+  display: flex;
+  align-items: center;
+  /* 玻璃擬態 */
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
+  backdrop-filter: blur(2.5px);
+}
+
+.discovery-p3title {
+  width: 125px;
+  height: 30px;
+  /* border: 1px #FFF solid; */
+  display: flex;
+  align-items: center;
+}
+
+.discovery-p3title h2 {
+  font-size: 20px;
+}
+
+.discovery-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* 礦迷回饋 */
+.feedback-displaytitle {
+  width: 438px;
+  height: 78px;
+  margin: 100px auto 90px;
+  /* margin-top: 50 auto auto px; */
+  display: flex;
+  align-items: center;
+}
+
+#title {
+  color: #FFF;
+  font-size: 28px;
+  width: 438px;
+  height: 78px;
+  /* margin: 0 auto 90px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-arrow {
+  width: 48px;
+  height: 48px;
+}
+
+.feedback {
+  color: #FFF;
+  width: 290px;
+  height: 140px;
+  border-radius: 20px;
+  /* border: 1px solid #000; */
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  /* 玻璃擬態 */
+  border-radius: 20px;
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
+  backdrop-filter: blur(2.5px);
+}
+
+.review-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative; */
+}
+
+.member-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* position: absolute; */
+}
+
+.review-img {
+  width: 113px;
+  height: 90px;
+  border-radius: 10px;
+  /* position: absolute; */
+}
+
+.star {
+  width: 10px;
+  height: 17px;
+}
+
+.content p {
+  width: 135px;
+  height: 72px;
+  font-size: 12px;
+  margin: 0;
+}
+
+.feedback-left {
+  width: 135px;
+  height: 110px;
+}
+
+/*專屬訂製Banner*/
+#custom {
+  color: #fff;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/客製化BN.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#custom img {
+  width: 34px;
+  height: 60px;
+}
+#custom #title-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#custom .custom-title {
+  width: 783px;
+  height: 121px;
+  margin: 54px auto 34px;
+  margin-top: 54 auto auto px;
+  display: flex;
+  align-items: center;
+}
+#custom #custom-titlebox {
+  width: 620px;
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#custom #custom-h2 {
+  font-size: 36px;
+}
+#custom #custom-p {
+  font-size: 18px;
+}
+#custom button {
+  width: 264px;
+  height: 57px;
+  /* 玻璃擬態 */
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.1) inset, 0px 0px 15px 2px rgba(233, 166, 160, 0.3);
+  backdrop-filter: blur(25px);
+}

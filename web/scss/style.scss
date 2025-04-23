@@ -1,0 +1,71 @@
+@import"reset";
+
+/*專屬訂製Banner*/
+#custom {
+    color: #fff;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // 背景
+    background-image: url("../images/客製化BN.jpg");
+    background-size: cover; //讓圖片填滿容器
+    background-position: center; //圖片置中
+    background-repeat: no-repeat; //不重複
+
+    img {
+        width: 34px;
+        height: 60px;
+    }
+
+    #title-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-title {
+        width: 783px;
+        height: 121px;
+        margin: 54px auto 34px;
+        margin-top: 54 auto auto px;
+        display: flex;
+        align-items: center;
+    }
+
+    #custom-titlebox {
+        width: 620px;
+        height: 121px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #custom-h2 {
+
+        // width: 800px;
+        // height: 60px;
+        font-size: 36px;
+
+    }
+
+    #custom-p {
+        font-size: 18px;
+
+    }
+
+    button {
+        width: 264px;
+        height: 57px;
+        /* 玻璃擬態 */
+        border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 15px 2px rgba(233, 166, 160, 0.30);
+        backdrop-filter: blur(25px);
+
+    }
+
+}
