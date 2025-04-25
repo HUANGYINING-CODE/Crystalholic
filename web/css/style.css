@@ -10,7 +10,6 @@ body {
 
 /*憑直覺抽一張吧*/
 #section-tarotcard {
-  height: 800px;
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +74,8 @@ body {
 /*訂製專屬手鍊*/
 #custom {
   color: #fff;
-  height: 700px;
+  height: 87.5vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;

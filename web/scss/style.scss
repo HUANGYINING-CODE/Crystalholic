@@ -9,8 +9,9 @@ body {
 
 /*憑直覺抽一張吧*/
 #section-tarotcard {
-    height: 800px;
-    display: flex;
+    // width: calc(100vw-1440px);
+    // height:100vh;
+    display: flex; 
     flex-direction: column;
     // justify-content: center;
 
@@ -83,7 +84,8 @@ body {
 /*訂製專屬手鍊*/
 #custom {
     color: #fff;
-    height: 700px;
+    height: calc(700/800*100vh);
+    width: 100vw; 
     display: flex;
     justify-content: center;
     align-items: center;
