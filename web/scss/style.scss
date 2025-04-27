@@ -1,17 +1,308 @@
+/* reset CSS */
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* 不累加邊框及內距 */
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    // line-height: $line-h-l;
+    // color: $color-black;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+}
+
+/* 重置連接 */
+a {
+    display: block; // a預設的行內元素，不支援約寬高及上下間距，通常會改為區塊，方便設定
+    // color: $color-deep;
+    text-decoration: none;
 }
 
 body {
     background-color: rgba(69, 57, 157, 1);
 }
 
+/*封面1*/
+.ch-cover {
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid #FFF;
+    background-image: url(../images/鑽石左.svg);
+    background-repeat: no-repeat;
+    background-size: 53px 94px;
+
+    background-image: url(../images/鑽石左.svg);
+    background-repeat: no-repeat;
+    background-size: 22px 38px;
+
+    background-image: url(../images/鑽石左.svg);
+    background-repeat: no-repeat;
+    background-size: 34px 60px;
+    
+    .cover-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: #FFF 2px solid;
+
+        // .deco1 {
+        //     width: 53px;
+        //     height: 94px;
+
+        //     // 定位
+        //     position: absolute;
+        //     left: calc((456/1440) * 100vw);
+        //     top: calc((237/800) * 100vw);
+        // }
+
+        h2 {
+            color: #FFF;
+            font-size: 24px;
+
+            .cover1 {
+                font: size 24px;
+                writing-mode: vertical-rl;
+                width: 44px;
+                height: 324px;
+                // 定位
+                position: absolute;
+                left: calc((625.34/1440)*100vw);
+                top: calc((59/800)*100vh);
+            }
+
+            .cover2 {
+                font: size 24px;
+                writing-mode: vertical-rl;
+                width: 44px;
+                height: 324px;
+                // 定位
+                position: absolute;
+                left: calc((759.44/1440)*100vw);
+                top: calc((159/800)*100vh);
+            }
+        }
+
+        .deco2 {
+            width: 22px;
+            height: 38px;
+
+            // 定位
+            position: absolute;
+            left: calc((904.94/1440) * 100vw);
+            top: calc((194.9/800) * 100vw);
+        }
+
+        .deco3 {
+            width: 34px;
+            height: 60px;
+
+            // 定位
+            position: absolute;
+            left: calc((948/1440) * 100vw);
+            top: calc((547/800) * 100vw);
+        }
+
+    }
+
+}
+
+/*封面2*/
+.section-starttest {
+    width: 100vw;
+    height: 100vh;
+    border: #FFF 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50.2px;
+
+
+    .starttest {
+        display: flex;
+        justify-content: center;
+
+        .left {
+            width: 305.66px;
+            height: 649.91px;
+            // 定位
+            display: block;
+            position: relative;
+            left: clac((270.51/1440)*100vw);
+            // left: 270.51px;
+            top: 0;
+        }
+
+        .right {
+            width: 316.46px;
+            height: 649.72px;
+            // 定位
+            display: block;
+            position: relative;
+            right: clac((261.36/1440)*100vw);
+            // left: 779.52px;
+            top: 0;
+        }
+
+        .startbtn {
+            width: 152.49px;
+            height: 346.82px;
+            display: block;
+            position: relative;
+            // right: clac((261.36/1440)*100vw);
+            top: calc((205/800)*100vh);
+        }
+
+        .bling {
+            width: 445.82px;
+            height: 402.37px;
+
+            position: relative;
+            left: calc((504.9/1440) * 100vw);
+            top: calc((214.99/800) * 100vw);
+
+        }
+
+        .scroll {
+            width: 28.5px;
+            height: 97.1px;
+
+            // 定位
+            position: relative;
+            left: calc((706/1440) * 100vw);
+            top: calc((582.9/800) * 100vw);
+        }
+    }
+
+    .starttest-p {
+        color: #FFF;
+        font-size: 24px;
+
+    }
+}
+
 /*憑直覺抽一張吧*/
 #section-tarotcard {
-    // width: calc(100vw-1440px);
-    // height:100vh;
-    display: flex; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     // justify-content: center;
 
@@ -32,9 +323,10 @@ body {
         justify-items: center;
         align-items: center;
     }
-    span{
+
+    span {
         display: flex;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
 
@@ -53,9 +345,9 @@ body {
     #tarotcard-title {
         color: #fff;
         font-size: 24px;
-        display:flex;
+        display: flex;
         justify-content: center;
-        align-content:center;
+        align-content: center;
     }
 
     #tarotcard-box {
@@ -68,7 +360,7 @@ body {
         width: 283px;
         height: 70px;
         padding: 20px 100px;
-        margin-bottom:72.18px;
+        margin-bottom: 72.18px;
         display: flex;
         justify-content: center; //items or content
         align-items: center;
@@ -84,8 +376,8 @@ body {
 /*訂製專屬手鍊*/
 #custom {
     color: #fff;
-    height: calc(700/800*100vh);
-    width: 100vw; 
+    height: calc((700/800)*100vh);
+    width: clac((1440/1440)*100vw);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +386,39 @@ body {
     background-size: cover; //讓圖片填滿容器
     background-position: center; //圖片置中
     background-repeat: no-repeat; //不重複
+
+    #title-all {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .custom-title {
+            width: 783px;
+            height: 121px;
+            margin: 54px auto 34px;
+            margin-top: 54 auto auto px;
+            display: flex;
+            align-items: center;
+
+            #custom-titlebox {
+                width: 620px;
+                height: 121px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                #custom-h2 {
+                    font-size: 36px;
+                }
+
+                #custom-p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 
     .dimond-left {
         width: 34px;
@@ -105,39 +430,6 @@ body {
         width: 34px;
         height: 60px;
         margin: 0 0 0 40px;
-    }
-
-    #title-all {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .custom-title {
-        width: 783px;
-        height: 121px;
-        margin: 54px auto 34px;
-        margin-top: 54 auto auto px;
-        display: flex;
-        align-items: center;
-    }
-
-    #custom-titlebox {
-        width: 620px;
-        height: 121px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #custom-h2 {
-        font-size: 36px;
-    }
-
-    #custom-p {
-        font-size: 18px;
     }
 
     button {
@@ -168,6 +460,7 @@ body {
         height: 691px;
         border: 1px #FFF solid;
     }
+
     .section-crystaldiscovery {
         display: flex;
         flex-direction: column;
@@ -175,6 +468,7 @@ body {
         justify-content: center;
         gap: 35px;
     }
+
     .discovery-displaytitle {
         width: 498px;
         height: 78px;
@@ -183,6 +477,7 @@ body {
         display: flex;
         align-items: center;
     }
+
     #titlediscovery {
         /* color: #FFF; */
         font-size: 28px;
@@ -192,13 +487,14 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
     .crystaldiscovery {
         /* border: 3px solid #fff; */
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    
+
     /* 水晶info */
     .crystal {
         width: 600px;
@@ -214,7 +510,7 @@ body {
         box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
         backdrop-filter: blur(2.5px);
     }
-    
+
     .crystal-name {
         width: 117px;
         height: 78px;
@@ -226,13 +522,15 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     .crystal-enname {
         font-size: 20px;
     }
-    
+
     .crystal-chname {
         font-size: 28px;
     }
+
     .discovery-content {
         font-size: 100%;
         width: 389px;
@@ -240,108 +538,108 @@ body {
         padding: 0 0 0 24px;
         margin: none;
     }
+
     /* 主要功效 */
-.discovery-p1 {
-    width: 600px;
-    height: 164px;
-    padding: 20px 35px;
-    /* border: 2px #FFF solid; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* 玻璃擬態 */
-    border-radius: 20px;
-    background: rgba(252, 252, 252, 0.40);
-    box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-    backdrop-filter: blur(2.5px);
-}
+    .discovery-p1 {
+        width: 600px;
+        height: 164px;
+        padding: 20px 35px;
+        /* border: 2px #FFF solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* 玻璃擬態 */
+        border-radius: 20px;
+        background: rgba(252, 252, 252, 0.40);
+        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+        backdrop-filter: blur(2.5px);
+    }
 
-.discovery-title {
-    width: 530px;
-    height: 30px;
-    padding: 0 0 8px 0;
-    border-bottom: 1px #FFF solid;
-    display: flex;
-    align-items: center;
-}
+    .discovery-title {
+        width: 530px;
+        height: 30px;
+        padding: 0 0 8px 0;
+        border-bottom: 1px #FFF solid;
+        display: flex;
+        align-items: center;
+    }
 
-.discovery-title h2 {
-    font-size: 20px;
-}
+    .discovery-title h2 {
+        font-size: 20px;
+    }
 
-.discovery-p1content {
-    width: 530px;
-    height: 78px;
-    margin-top: 8px;
-}
+    .discovery-p1content {
+        width: 530px;
+        height: 78px;
+        margin-top: 8px;
+    }
 
-/* 適合人群 */
-.discovery-p2 {
-    width: 600px;
-    height: 138px;
-    padding: 20px 35px;
-    /* border: 2px #FFF solid; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* 玻璃擬態 */
-    border-radius: 20px;
-    background: rgba(252, 252, 252, 0.40);
-    box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-    backdrop-filter: blur(2.5px);
-}
+    /* 適合人群 */
+    .discovery-p2 {
+        width: 600px;
+        height: 138px;
+        padding: 20px 35px;
+        /* border: 2px #FFF solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* 玻璃擬態 */
+        border-radius: 20px;
+        background: rgba(252, 252, 252, 0.40);
+        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+        backdrop-filter: blur(2.5px);
+    }
 
-.discovery-p2content {
-    width: 530px;
-    height: 52px;
-    margin-top: 8px;
-}
+    .discovery-p2content {
+        width: 530px;
+        height: 52px;
+        margin-top: 8px;
+    }
 
-/* 建議水晶 */
-.discovery-p3 {
-    width: 600px;
-    height: 76px;
-    padding: 20px 35px;
-    gap: 32px;
-    display: flex;
-    align-items: center;
-    /* 玻璃擬態 */
-    border-radius: 20px;
-    background: rgba(252, 252, 252, 0.40);
-    box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-    backdrop-filter: blur(2.5px);
-}
+    /* 建議水晶 */
+    .discovery-p3 {
+        width: 600px;
+        height: 76px;
+        padding: 20px 35px;
+        gap: 32px;
+        display: flex;
+        align-items: center;
+        /* 玻璃擬態 */
+        border-radius: 20px;
+        background: rgba(252, 252, 252, 0.40);
+        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+        backdrop-filter: blur(2.5px);
 
-.discovery-p3title {
-    width: 125px;
-    height: 30px;
-    /* border: 1px #FFF solid; */
-    display: flex;
-    align-items: center;
-}
 
-.discovery-p3title h2 {
-    font-size: 20px;
-}
+        .discovery-p3title {
+            width: 125px;
+            height: 30px;
+            /* border: 1px #FFF solid; */
+            display: flex;
+            align-items: center;
+        }
 
-.discovery-img {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-}
 
-    
-    
-    
-    
-    
-    
-    
+        .discovery-p3title h2 {
+            font-size: 20px;
+        }
 
+        .discovery-imgbox {
+            display: flex;
+            gap: 12px;
+
+        }
+
+        .discovery-img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+        }
+    }
 }
 
 /*礦迷回饋*/
-#section-feedback{
+#section-feedback {
     .feedback-displaytitle {
         width: 438px;
         height: 78px;
@@ -349,39 +647,39 @@ body {
         /* margin-top: 50 auto auto px; */
         display: flex;
         align-items: center;
+
+        #title {
+            color: #FFF;
+            font-size: 28px;
+            width: 438px;
+            height: 78px;
+            /* margin: 0 auto 90px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
-    
-    #title {
-        color: #FFF;
-        font-size: 28px;
-        width: 438px;
-        height: 78px;
-        /* margin: 0 auto 90px; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
+
     .feedback-box {
         margin: 0 0 142px 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
+        .feedback-arrowleft {
+            width: 48px;
+            height: 48px;
+            margin: 0 23px 0 0;
+        }
+
+        .feedback-arrowright {
+            width: 48px;
+            height: 48px;
+            margin: 0 0 0 23px;
+        }
     }
-    
-    .feedback-arrowleft {
-        width: 48px;
-        height: 48px;
-        margin: 0 23px 0 0;
-    }
-    
-    .feedback-arrowright {
-        width: 48px;
-        height: 48px;
-        margin: 0 0 0 23px;
-    }
-    
+
     .feedback {
         color: #FFF;
         width: 290px;
@@ -392,51 +690,66 @@ body {
         margin: 10px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         align-items: center;
-        gap: 20px;
+        gap: 12px;
         /* 玻璃擬態 */
         border-radius: 20px;
         background: rgba(252, 252, 252, 0.40);
         box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
         backdrop-filter: blur(2.5px);
-    }
-    
-    .review-pic {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* position: relative; */
-    }
-    
-    .member-img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        /* position: absolute; */
-    }
-    
-    .review-img {
-        width: 113px;
-        height: 90px;
-        border-radius: 10px;
-        /* position: absolute; */
-    }
-    
-    .star {
-        width: 10px;
-        height: 17px;
-    }
-    
-    .content p {
-        width: 135px;
-        height: 72px;
-        font-size: 12px;
-        margin: 0;
-    }
-    
-    .feedback-left {
-        width: 135px;
-        height: 110px;
+
+
+        .review-pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* position: relative; */
+
+            .member-img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                /* position: absolute; */
+            }
+
+            .review-img {
+                width: 113px;
+                height: 90px;
+                border-radius: 10px;
+                /* position: absolute; */
+            }
+        }
+
+
+        .feedback-left {
+            width: 135px;
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px;
+
+            .star-box {
+                display: flex;
+                justify-content: start;
+                gap: 8px;
+
+                .star {
+                    width: 10px;
+                    height: 17px;
+                }
+            }
+
+            // .content p {
+
+            p {
+                width: 135px;
+                height: 72px;
+                // margin: 7px 15px 20.87px 12px;
+                font-size: 12px;
+
+            }
+        }
     }
 }

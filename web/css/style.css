@@ -1,15 +1,257 @@
 @charset "UTF-8";
+/* reset CSS */
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* 不累加邊框及內距 */
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* 重置字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連接 */
+a {
+  display: block;
+  text-decoration: none;
 }
 
 body {
   background-color: rgb(69, 57, 157);
 }
 
+/*封面1*/
+.ch-cover {
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid #FFF;
+  background-image: url(../images/鑽石左.svg);
+  background-repeat: no-repeat;
+  background-size: 53px 94px;
+  background-image: url(../images/鑽石左.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 38px;
+  background-image: url(../images/鑽石左.svg);
+  background-repeat: no-repeat;
+  background-size: 34px 60px;
+}
+.ch-cover .cover-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: #FFF 2px solid;
+}
+.ch-cover .cover-box h2 {
+  color: #FFF;
+  font-size: 24px;
+}
+.ch-cover .cover-box h2 .cover1 {
+  font: size 24px;
+  writing-mode: vertical-rl;
+  width: 44px;
+  height: 324px;
+  position: absolute;
+  left: 43.4263888889vw;
+  top: 7.375vh;
+}
+.ch-cover .cover-box h2 .cover2 {
+  font: size 24px;
+  writing-mode: vertical-rl;
+  width: 44px;
+  height: 324px;
+  position: absolute;
+  left: 52.7388888889vw;
+  top: 19.875vh;
+}
+.ch-cover .cover-box .deco2 {
+  width: 22px;
+  height: 38px;
+  position: absolute;
+  left: 62.8430555556vw;
+  top: 24.3625vw;
+}
+.ch-cover .cover-box .deco3 {
+  width: 34px;
+  height: 60px;
+  position: absolute;
+  left: 65.8333333333vw;
+  top: 68.375vw;
+}
+
+/*封面2*/
+.section-starttest {
+  width: 100vw;
+  height: 100vh;
+  border: #FFF 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50.2px;
+}
+.section-starttest .starttest {
+  display: flex;
+  justify-content: center;
+}
+.section-starttest .starttest .left {
+  width: 305.66px;
+  height: 649.91px;
+  display: block;
+  position: relative;
+  left: clac(18.7854166667vw);
+  top: 0;
+}
+.section-starttest .starttest .right {
+  width: 316.46px;
+  height: 649.72px;
+  display: block;
+  position: relative;
+  right: clac(18.15vw);
+  top: 0;
+}
+.section-starttest .starttest .startbtn {
+  width: 152.49px;
+  height: 346.82px;
+  display: block;
+  position: relative;
+  top: 25.625vh;
+}
+.section-starttest .starttest .bling {
+  width: 445.82px;
+  height: 402.37px;
+  position: relative;
+  left: 35.0625vw;
+  top: 26.87375vw;
+}
+.section-starttest .starttest .scroll {
+  width: 28.5px;
+  height: 97.1px;
+  position: relative;
+  left: 49.0277777778vw;
+  top: 72.8625vw;
+}
+.section-starttest .starttest-p {
+  color: #FFF;
+  font-size: 24px;
+}
+
 /*憑直覺抽一張吧*/
 #section-tarotcard {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +317,7 @@ body {
 #custom {
   color: #fff;
   height: 87.5vh;
-  width: 100vw;
+  width: clac(100vw);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +325,34 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+#custom #title-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#custom #title-all .custom-title {
+  width: 783px;
+  height: 121px;
+  margin: 54px auto 34px;
+  margin-top: 54 auto auto px;
+  display: flex;
+  align-items: center;
+}
+#custom #title-all .custom-title #custom-titlebox {
+  width: 620px;
+  height: 121px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#custom #title-all .custom-title #custom-titlebox #custom-h2 {
+  font-size: 36px;
+}
+#custom #title-all .custom-title #custom-titlebox #custom-p {
+  font-size: 18px;
 }
 #custom .dimond-left {
   width: 34px;
@@ -93,34 +363,6 @@ body {
   width: 34px;
   height: 60px;
   margin: 0 0 0 40px;
-}
-#custom #title-all {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#custom .custom-title {
-  width: 783px;
-  height: 121px;
-  margin: 54px auto 34px;
-  margin-top: 54 auto auto px;
-  display: flex;
-  align-items: center;
-}
-#custom #custom-titlebox {
-  width: 620px;
-  height: 121px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#custom #custom-h2 {
-  font-size: 36px;
-}
-#custom #custom-p {
-  font-size: 18px;
 }
 #custom button {
   color: #fff;
@@ -281,17 +523,21 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .discovery-p3title {
+#section-crystaldiscovery .discovery-p3 .discovery-p3title {
   width: 125px;
   height: 30px;
   /* border: 1px #FFF solid; */
   display: flex;
   align-items: center;
 }
-#section-crystaldiscovery .discovery-p3title h2 {
+#section-crystaldiscovery .discovery-p3 .discovery-p3title h2 {
   font-size: 20px;
 }
-#section-crystaldiscovery .discovery-img {
+#section-crystaldiscovery .discovery-p3 .discovery-imgbox {
+  display: flex;
+  gap: 12px;
+}
+#section-crystaldiscovery .discovery-p3 .discovery-img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -306,7 +552,7 @@ body {
   display: flex;
   align-items: center;
 }
-#section-feedback #title {
+#section-feedback .feedback-displaytitle #title {
   color: #FFF;
   font-size: 28px;
   width: 438px;
@@ -323,12 +569,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-#section-feedback .feedback-arrowleft {
+#section-feedback .feedback-box .feedback-arrowleft {
   width: 48px;
   height: 48px;
   margin: 0 23px 0 0;
 }
-#section-feedback .feedback-arrowright {
+#section-feedback .feedback-box .feedback-arrowright {
   width: 48px;
   height: 48px;
   margin: 0 0 0 23px;
@@ -343,44 +589,51 @@ body {
   margin: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
   /* 玻璃擬態 */
   border-radius: 20px;
   background: rgba(252, 252, 252, 0.4);
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-feedback .review-pic {
+#section-feedback .feedback .review-pic {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* position: relative; */
 }
-#section-feedback .member-img {
+#section-feedback .feedback .review-pic .member-img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   /* position: absolute; */
 }
-#section-feedback .review-img {
+#section-feedback .feedback .review-pic .review-img {
   width: 113px;
   height: 90px;
   border-radius: 10px;
   /* position: absolute; */
 }
-#section-feedback .star {
+#section-feedback .feedback .feedback-left {
+  width: 135px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+#section-feedback .feedback .feedback-left .star-box {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+}
+#section-feedback .feedback .feedback-left .star-box .star {
   width: 10px;
   height: 17px;
 }
-#section-feedback .content p {
+#section-feedback .feedback .feedback-left p {
   width: 135px;
   height: 72px;
   font-size: 12px;
-  margin: 0;
-}
-#section-feedback .feedback-left {
-  width: 135px;
-  height: 110px;
 }
