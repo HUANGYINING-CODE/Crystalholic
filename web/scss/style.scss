@@ -145,17 +145,17 @@ body {
     width: 100vw;
     height: 100vh;
     border: 2px solid #FFF;
-    background-image: url(../images/鑽石左.svg);
-    background-repeat: no-repeat;
-    background-size: 53px 94px;
+    // background-image: url(../images/鑽石左.svg);
+    // background-repeat: no-repeat;
+    // background-size: 53px 94px;
 
-    background-image: url(../images/鑽石左.svg);
-    background-repeat: no-repeat;
-    background-size: 22px 38px;
+    // background-image: url(../images/鑽石左.svg);
+    // background-repeat: no-repeat;
+    // background-size: 22px 38px;
 
-    background-image: url(../images/鑽石左.svg);
-    background-repeat: no-repeat;
-    background-size: 34px 60px;
+    // background-image: url(../images/鑽石左.svg);
+    // background-repeat: no-repeat;
+    // background-size: 34px 60px;
     
     .cover-box {
         display: flex;
@@ -163,15 +163,15 @@ body {
         justify-content: center;
         border: #FFF 2px solid;
 
-        // .deco1 {
-        //     width: 53px;
-        //     height: 94px;
+        .deco1 {
+            width: 53px;
+            height: 94px;
 
-        //     // 定位
-        //     position: absolute;
-        //     left: calc((456/1440) * 100vw);
-        //     top: calc((237/800) * 100vw);
-        // }
+            // 定位
+            position: absolute;
+            left: 31.6%;
+            top:29.6%;
+        }
 
         h2 {
             color: #FFF;
@@ -206,8 +206,8 @@ body {
 
             // 定位
             position: absolute;
-            left: calc((904.94/1440) * 100vw);
-            top: calc((194.9/800) * 100vw);
+            left: 62.8%;
+            top: 24.3%;
         }
 
         .deco3 {
@@ -216,8 +216,8 @@ body {
 
             // 定位
             position: absolute;
-            left: calc((948/1440) * 100vw);
-            top: calc((547/800) * 100vw);
+            left: 65.8%;
+            top: 68.3%;
         }
 
     }

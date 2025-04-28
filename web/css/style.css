@@ -139,21 +139,19 @@ body {
   width: 100vw;
   height: 100vh;
   border: 2px solid #FFF;
-  background-image: url(../images/鑽石左.svg);
-  background-repeat: no-repeat;
-  background-size: 53px 94px;
-  background-image: url(../images/鑽石左.svg);
-  background-repeat: no-repeat;
-  background-size: 22px 38px;
-  background-image: url(../images/鑽石左.svg);
-  background-repeat: no-repeat;
-  background-size: 34px 60px;
 }
 .ch-cover .cover-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: #FFF 2px solid;
+}
+.ch-cover .cover-box .deco1 {
+  width: 53px;
+  height: 94px;
+  position: absolute;
+  left: 31.6%;
+  top: 29.6%;
 }
 .ch-cover .cover-box h2 {
   color: #FFF;
@@ -181,15 +179,15 @@ body {
   width: 22px;
   height: 38px;
   position: absolute;
-  left: 62.8430555556vw;
-  top: 24.3625vw;
+  left: 62.8%;
+  top: 24.3%;
 }
 .ch-cover .cover-box .deco3 {
   width: 34px;
   height: 60px;
   position: absolute;
-  left: 65.8333333333vw;
-  top: 68.375vw;
+  left: 65.8%;
+  top: 68.3%;
 }
 
 /*封面2*/
