@@ -394,6 +394,9 @@ body {
 
 /*水晶小百科*/
 #section-crystaldiscovery {
+  width: 100vw;
+  height: 100vh;
+  border: #FFF 2px solid;
   color: #FFF;
   display: flex;
   justify-content: start;
@@ -407,47 +410,79 @@ body {
   height: 691px;
   border: 1px #FFF solid;
 }
-#section-crystaldiscovery .crystal-display img {
+#section-crystaldiscovery .crystal-display .circle {
+  position: absolute;
+  top: 70%;
+  left: 50%;
   width: 100px;
   height: 100px;
+  object-fit: cover;
+  transform-origin: center -230px;
+  /* 半徑可調整 */
 }
-#section-crystaldiscovery .crystal-display img .a {
-  transform: rotate(-90deg);
+#section-crystaldiscovery .crystal-display .circle:nth-child(1) {
+  transform: rotate(0deg);
 }
-#section-crystaldiscovery .crystal-display img .b {
-  transform: rotate(-73.64deg);
+#section-crystaldiscovery .crystal-display .circle:nth-child(2) {
+  transform: rotate(30deg);
 }
-#section-crystaldiscovery .crystal-display img .c {
-  transform: rotate(-57.27deg);
+#section-crystaldiscovery .crystal-display .circle:nth-child(3) {
+  transform: rotate(60deg);
 }
-#section-crystaldiscovery .crystal-display img .d {
-  transform: rotate(-40.91deg);
-}
-#section-crystaldiscovery .crystal-display img .e {
-  transform: rotate(-24.55deg);
-}
-#section-crystaldiscovery .crystal-display img .f {
-  transform: rotate(-8.18deg);
-}
-#section-crystaldiscovery .crystal-display img .g {
-  transform: rotate(8.18deg);
-}
-#section-crystaldiscovery .crystal-display img .h {
-  transform: rotate(24.55deg);
-}
-#section-crystaldiscovery .crystal-display img .i {
-  transform: rotate(40.91deg);
-}
-#section-crystaldiscovery .crystal-display img .j {
-  transform: rotate(57.27deg);
-}
-#section-crystaldiscovery .crystal-display img .k {
-  transform: rotate(73.64deg);
-}
-#section-crystaldiscovery .crystal-display img .l {
+#section-crystaldiscovery .crystal-display .circle:nth-child(4) {
   transform: rotate(90deg);
 }
-#section-crystaldiscovery .section-crystaldiscovery {
+#section-crystaldiscovery .crystal-display .circle:nth-child(5) {
+  transform: rotate(120deg);
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(6) {
+  transform: rotate(150deg);
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(7) {
+  transform: rotate(180deg);
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(8) {
+  transform: rotate(210deg);
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(9) {
+  transform: rotate(240deg);
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(10) {
+  transform: rotate(270deg);
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(10)::before {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/icon_btn_up.ico.svg);
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(10)::after {
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/icon_btn_down.ico.svg);
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  display: block;
+  position: absolute;
+  top: 330px;
+  right: 66px;
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(11) {
+  transform: rotate(300deg);
+}
+#section-crystaldiscovery .crystal-display .circle:nth-child(12) {
+  transform: rotate(330deg);
+}
+
+.section-crystaldiscovery {
   margin: 6.7% 11.5% 9.7% 7.91%;
   display: flex;
   flex-direction: column;
@@ -455,7 +490,7 @@ body {
   justify-items: center;
   gap: 35px;
 }
-#section-crystaldiscovery .section-crystaldiscovery header {
+.section-crystaldiscovery header {
   width: 498px;
   height: 78px;
   display: flex;
@@ -463,7 +498,7 @@ body {
   justify-items: center;
   align-items: center;
 }
-#section-crystaldiscovery .section-crystaldiscovery header #titlediscovery {
+.section-crystaldiscovery header #titlediscovery {
   /* color: #FFF; */
   font-size: 28px;
   width: 498px;
@@ -472,7 +507,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery {
+.section-crystaldiscovery .crystaldiscovery {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -481,7 +516,7 @@ body {
   /* 適合人群 */
   /* 建議水晶 */
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal {
+.section-crystaldiscovery .crystaldiscovery .crystal {
   width: 600px;
   height: 118px;
   padding: 20px 35px;
@@ -495,7 +530,7 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .crystal-name {
+.section-crystaldiscovery .crystaldiscovery .crystal .crystal-name {
   width: 117px;
   height: 78px;
   padding: 0 24px 0 0;
@@ -505,20 +540,20 @@ body {
   justify-content: center;
   align-items: center;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .crystal-name .crystal-enname {
+.section-crystaldiscovery .crystaldiscovery .crystal .crystal-name .crystal-enname {
   font-size: 20px;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .crystal-name .crystal-chname {
+.section-crystaldiscovery .crystaldiscovery .crystal .crystal-name .crystal-chname {
   font-size: 28px;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .discovery-content {
+.section-crystaldiscovery .crystaldiscovery .crystal .discovery-content {
   font-size: 100%;
   width: 389px;
   height: 78px;
   padding: 0 0 0 24px;
   margin: none;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p1 {
+.section-crystaldiscovery .crystaldiscovery .discovery-p1 {
   width: 600px;
   height: 164px;
   padding: 20px 35px;
@@ -532,7 +567,7 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p1 h2 {
+.section-crystaldiscovery .crystaldiscovery .discovery-p1 h2 {
   font-size: 20px;
   width: 530px;
   height: 30px;
@@ -541,12 +576,12 @@ body {
   display: flex;
   align-items: center;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p1 .discovery-p1content {
+.section-crystaldiscovery .crystaldiscovery .discovery-p1 .discovery-p1content {
   width: 530px;
   height: 78px;
   margin-top: 8px;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p2 {
+.section-crystaldiscovery .crystaldiscovery .discovery-p2 {
   width: 600px;
   height: 138px;
   padding: 20px 35px;
@@ -560,7 +595,7 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p2 h2 {
+.section-crystaldiscovery .crystaldiscovery .discovery-p2 h2 {
   font-size: 20px;
   width: 530px;
   height: 30px;
@@ -569,12 +604,12 @@ body {
   display: flex;
   align-items: center;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p2 .discovery-p2content {
+.section-crystaldiscovery .crystaldiscovery .discovery-p2 .discovery-p2content {
   width: 530px;
   height: 52px;
   margin-top: 8px;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 {
+.section-crystaldiscovery .crystaldiscovery .discovery-p3 {
   width: 600px;
   height: 76px;
   padding: 20px 35px;
@@ -587,7 +622,7 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 h2 {
+.section-crystaldiscovery .crystaldiscovery .discovery-p3 h2 {
   font-size: 20px;
   width: 125px;
   height: 30px;
@@ -595,11 +630,11 @@ body {
   display: flex;
   align-items: center;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 .discovery-imgbox {
+.section-crystaldiscovery .crystaldiscovery .discovery-p3 .discovery-imgbox {
   display: flex;
   gap: 12px;
 }
-#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 .discovery-imgbox .discovery-img {
+.section-crystaldiscovery .crystaldiscovery .discovery-p3 .discovery-imgbox .discovery-img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
