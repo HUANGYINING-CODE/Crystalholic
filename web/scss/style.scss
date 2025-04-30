@@ -318,92 +318,89 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
 
     .tarotcard {
+        margin: 8.7% 5.57% 9% 5.6%;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 60px;
-    }
 
-    #tarotcard-title {
-        width: 344px;
-        height: 42px;
-        // border: 1px solid white;
-        margin-top: 70px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-    }
+        gap: 7.5%; /////////////////////////////////////////////////////
 
-    span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        #tarotcard-title {
+            color: #fff;
+            font-size: 24px;
+            width: 344px;
+            height: 42px;
+            // border: 1px solid white;
+            // margin-top: 70px;
 
-    .dimond-left {
-        width: 22px;
-        height: 39.22px;
-        margin: 0 50px 0 0;
-    }
+            display: flex;
+            justify-items: center;
+            align-items: center;
 
-    .dimond-right {
-        width: 22px;
-        height: 39.22px;
-        margin: 0 0 0 50px;
-    }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-    #tarotcard-title {
-        color: #fff;
-        font-size: 24px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
+            .dimond-left {
+                width: 22px;
+                height: 39.22px;
+                margin: 0 50px 0 0;
+            }
 
-    #tarotcard-box {
-        width: 1279px;
-        height: 427px;
-        // border: 1px solid white;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // gap: -110px;
-
-        .cardchild-1 {
-            width: 280px;
-            height: 455px;
-
-            margin-left: 0;
+            .dimond-right {
+                width: 22px;
+                height: 39.22px;
+                margin: 0 0 0 50px;
+            }
         }
 
-        .card {
-            width: 280px;
-            height: 455px;
-            margin-left: -110px;
+        #tarotcard-box {
+            width: 1279px;
+            height: 427px;
+            // border: 1px solid white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // gap: -110px;
+
+            .cardchild-1 {
+                width: 280px;
+                height: 455px;
+
+                margin-left: 0;
+            }
+
+            .card {
+                width: 280px;
+                height: 455px;
+                margin-left: -110px;
+
+            }
 
         }
 
-    }
-
-    #tarotcard-btn {
-        width: 283px;
-        height: 70px;
-        padding: 20px 100px;
-        margin-bottom: 72.18px;
-        display: flex;
-        justify-content: center; //items or content
-        align-items: center;
-        /*樣式*/
-        color: #fff;
-        background-color: transparent;
-        border-radius: 1000px;
-        border: 2px solid #8750BF;
-        backdrop-filter: blur(2px);
+        #tarotcard-btn {
+            width: 283px;
+            height: 70px;
+            padding: 20px 100px;
+            // margin-bottom: 72.18px;
+            display: flex;
+            justify-content: center; //items or content
+            align-items: center;
+            /*樣式*/
+            color: #fff;
+            background-color: transparent;
+            border-radius: 1000px;
+            border: 2px solid #8750BF;
+            backdrop-filter: blur(2px);
+        }
     }
 }
 
@@ -483,198 +480,245 @@ body {
 ///* 水晶小百科----字體、裝飾顏色要改 */
 #section-crystaldiscovery {
     color: #FFF;
-    margin: 54px 166px 25px 0;
+    // margin: 6.7% 11.5% 3.1% 0;
     display: flex;
     justify-content: start;
     align-items: center;
     /* margin: none; */
 
     .crystal-display {
-        width: 40;
+        position: relative;
+        margin: auto;
+        ////////////////////////////////////////////////////
+        width: 40%;
         height: 691px;
+        ////////////////////////////////////////////////////
         border: 1px #FFF solid;
+
+        img {
+            width: 100px;
+            height: 100px;
+
+            .a {
+                transform: rotate(-90deg)
+            }
+            .b {
+                transform: rotate(-73.64deg)
+            }
+            .c {
+                transform: rotate(-57.27deg)
+            }
+            .d {
+                transform: rotate(-40.91deg)
+            }
+            .e {
+                transform: rotate(-24.55deg)
+            }
+            .f {
+                transform: rotate(-8.18deg)
+            }
+            .g {
+                transform: rotate(8.18deg)
+            }
+            .h {
+                transform: rotate(24.55deg)
+            }
+            .i {
+                transform: rotate(40.91deg)
+            }
+            .j {
+                transform: rotate(57.27deg)
+            }
+            .k {
+                transform: rotate(73.64deg)
+            }
+            .l {
+                transform: rotate(90deg)
+            }
+        }
     }
 
     .section-crystaldiscovery {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        gap: 35px;
-    }
+        margin: 6.7% 11.5% 9.7% 7.91%;
 
-    .discovery-displaytitle {
-        width: 498px;
-        height: 78px;
-        margin: 54px auto 34px;
-        margin-top: 54 auto auto px;
-        display: flex;
-        align-items: center;
-    }
-
-    #titlediscovery {
-        /* color: #FFF; */
-        font-size: 28px;
-        width: 498px;
-        height: 78px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .crystaldiscovery {
-        /* border: 3px solid #fff; */
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        margin: 113px;
-    }
-
-    /* 水晶info */
-    .crystal {
-        width: 600px;
-        height: 118px;
-        padding: 20px 35px;
-        /* border: 2px #FFF solid; */
-        display: flex;
         justify-items: center;
-        align-items: center;
-        /* 玻璃擬態 */
-        border-radius: 20px;
-        background: rgba(252, 252, 252, 0.40);
-        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-        backdrop-filter: blur(2.5px);
+        gap: 35px;
 
-
-        .crystal-name {
-            width: 117px;
+        header {
+            width: 498px;
             height: 78px;
-            padding: 0 24px 0 0;
-            border-right: 1px #FFF solid;
-            ;
+
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+
+            #titlediscovery {
+                /* color: #FFF; */
+                font-size: 28px;
+                width: 498px;
+                height: 78px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .crystaldiscovery {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            gap: 20px;
 
-            .crystal-enname {
-                font-size: 20px;
+            /* 水晶info */
+            .crystal {
+                width: 600px;
+                height: 118px;
+                padding: 20px 35px;
+                /* border: 2px #FFF solid; */
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                /* 玻璃擬態 */
+                border-radius: 20px;
+                background: rgba(252, 252, 252, 0.40);
+                box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+                backdrop-filter: blur(2.5px);
+
+
+                .crystal-name {
+                    width: 117px;
+                    height: 78px;
+                    padding: 0 24px 0 0;
+                    border-right: 1px #FFF solid;
+                    ;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .crystal-enname {
+                        font-size: 20px;
+                    }
+
+                    .crystal-chname {
+                        font-size: 28px;
+                    }
+                }
+
+                .discovery-content {
+                    font-size: 100%;
+                    width: 389px;
+                    height: 78px;
+                    padding: 0 0 0 24px;
+                    margin: none;
+                }
             }
 
-            .crystal-chname {
-                font-size: 28px;
+            /* 主要功效 */
+            .discovery-p1 {
+                width: 600px;
+                height: 164px;
+                padding: 20px 35px;
+                /* border: 2px #FFF solid; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* 玻璃擬態 */
+                border-radius: 20px;
+                background: rgba(252, 252, 252, 0.40);
+                box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+                backdrop-filter: blur(2.5px);
+
+                h2 {
+                    font-size: 20px;
+                    width: 530px;
+                    height: 30px;
+                    padding: 0 0 8px 0;
+                    border-bottom: 1px #FFF solid;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .discovery-p1content {
+                    width: 530px;
+                    height: 78px;
+                    margin-top: 8px;
+                }
             }
-        }
 
-        .discovery-content {
-            font-size: 100%;
-            width: 389px;
-            height: 78px;
-            padding: 0 0 0 24px;
-            margin: none;
-        }
-    }
+            /* 適合人群 */
+            .discovery-p2 {
+                width: 600px;
+                height: 138px;
+                padding: 20px 35px;
+                /* border: 2px #FFF solid; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* 玻璃擬態 */
+                border-radius: 20px;
+                background: rgba(252, 252, 252, 0.40);
+                box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+                backdrop-filter: blur(2.5px);
 
+                h2 {
+                    font-size: 20px;
+                    width: 530px;
+                    height: 30px;
+                    padding: 0 0 8px 0;
+                    border-bottom: 1px #FFF solid;
+                    display: flex;
+                    align-items: center;
+                }
 
+                .discovery-p2content {
+                    width: 530px;
+                    height: 52px;
+                    margin-top: 8px;
+                }
+            }
 
-    /* 主要功效 */
-    .discovery-p1 {
-        width: 600px;
-        height: 164px;
-        padding: 20px 35px;
-        /* border: 2px #FFF solid; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* 玻璃擬態 */
-        border-radius: 20px;
-        background: rgba(252, 252, 252, 0.40);
-        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-        backdrop-filter: blur(2.5px);
-    }
+            /* 建議水晶 */
+            .discovery-p3 {
+                width: 600px;
+                height: 76px;
+                padding: 20px 35px;
+                gap: 32px;
+                display: flex;
+                align-items: center;
+                /* 玻璃擬態 */
+                border-radius: 20px;
+                background: rgba(252, 252, 252, 0.40);
+                box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
+                backdrop-filter: blur(2.5px);
 
-    .discovery-title {
-        width: 530px;
-        height: 30px;
-        padding: 0 0 8px 0;
-        border-bottom: 1px #FFF solid;
-        display: flex;
-        align-items: center;
-    }
+                h2 {
+                    font-size: 20px;
+                    width: 125px;
+                    height: 30px;
+                    /* border: 1px #FFF solid; */
+                    display: flex;
+                    align-items: center;
+                }
 
-    .discovery-title h2 {
-        font-size: 20px;
-    }
+                .discovery-imgbox {
+                    display: flex;
+                    gap: 12px;
 
-    .discovery-p1content {
-        width: 530px;
-        height: 78px;
-        margin-top: 8px;
-    }
-
-    /* 適合人群 */
-    .discovery-p2 {
-        width: 600px;
-        height: 138px;
-        padding: 20px 35px;
-        /* border: 2px #FFF solid; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* 玻璃擬態 */
-        border-radius: 20px;
-        background: rgba(252, 252, 252, 0.40);
-        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-        backdrop-filter: blur(2.5px);
-    }
-
-    .discovery-p2content {
-        width: 530px;
-        height: 52px;
-        margin-top: 8px;
-    }
-
-    /* 建議水晶 */
-    .discovery-p3 {
-        width: 600px;
-        height: 76px;
-        padding: 20px 35px;
-        gap: 32px;
-        display: flex;
-        align-items: center;
-        /* 玻璃擬態 */
-        border-radius: 20px;
-        background: rgba(252, 252, 252, 0.40);
-        box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.30);
-        backdrop-filter: blur(2.5px);
-
-
-        .discovery-p3title {
-            width: 125px;
-            height: 30px;
-            /* border: 1px #FFF solid; */
-            display: flex;
-            align-items: center;
-        }
-
-
-        .discovery-p3title h2 {
-            font-size: 20px;
-        }
-
-        .discovery-imgbox {
-            display: flex;
-            gap: 12px;
-
-        }
-
-        .discovery-img {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
+                    .discovery-img {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
     }
 }
+
 
 /*礦迷回饋*/
 #section-feedback {

@@ -266,64 +266,58 @@ body {
   flex-direction: column;
 }
 #section-tarotcard .tarotcard {
+  margin: 8.7% 5.57% 9% 5.6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 7.5%;
 }
-#section-tarotcard #tarotcard-title {
+#section-tarotcard .tarotcard #tarotcard-title {
+  color: #fff;
+  font-size: 24px;
   width: 344px;
   height: 42px;
-  margin-top: 70px;
   display: flex;
   justify-items: center;
   align-items: center;
 }
-#section-tarotcard span {
+#section-tarotcard .tarotcard #tarotcard-title span {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#section-tarotcard .dimond-left {
+#section-tarotcard .tarotcard #tarotcard-title .dimond-left {
   width: 22px;
   height: 39.22px;
   margin: 0 50px 0 0;
 }
-#section-tarotcard .dimond-right {
+#section-tarotcard .tarotcard #tarotcard-title .dimond-right {
   width: 22px;
   height: 39.22px;
   margin: 0 0 0 50px;
 }
-#section-tarotcard #tarotcard-title {
-  color: #fff;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-#section-tarotcard #tarotcard-box {
+#section-tarotcard .tarotcard #tarotcard-box {
   width: 1279px;
   height: 427px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#section-tarotcard #tarotcard-box .cardchild-1 {
+#section-tarotcard .tarotcard #tarotcard-box .cardchild-1 {
   width: 280px;
   height: 455px;
   margin-left: 0;
 }
-#section-tarotcard #tarotcard-box .card {
+#section-tarotcard .tarotcard #tarotcard-box .card {
   width: 280px;
   height: 455px;
   margin-left: -110px;
 }
-#section-tarotcard #tarotcard-btn {
+#section-tarotcard .tarotcard #tarotcard-btn {
   width: 283px;
   height: 70px;
   padding: 20px 100px;
-  margin-bottom: 72.18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -401,37 +395,75 @@ body {
 /*水晶小百科*/
 #section-crystaldiscovery {
   color: #FFF;
-  margin: 54px 166px 25px 0;
   display: flex;
   justify-content: start;
   align-items: center;
   /* margin: none; */
-  /* 水晶info */
-  /* 主要功效 */
-  /* 適合人群 */
-  /* 建議水晶 */
 }
 #section-crystaldiscovery .crystal-display {
-  width: 40;
+  position: relative;
+  margin: auto;
+  width: 40%;
   height: 691px;
   border: 1px #FFF solid;
 }
+#section-crystaldiscovery .crystal-display img {
+  width: 100px;
+  height: 100px;
+}
+#section-crystaldiscovery .crystal-display img .a {
+  transform: rotate(-90deg);
+}
+#section-crystaldiscovery .crystal-display img .b {
+  transform: rotate(-73.64deg);
+}
+#section-crystaldiscovery .crystal-display img .c {
+  transform: rotate(-57.27deg);
+}
+#section-crystaldiscovery .crystal-display img .d {
+  transform: rotate(-40.91deg);
+}
+#section-crystaldiscovery .crystal-display img .e {
+  transform: rotate(-24.55deg);
+}
+#section-crystaldiscovery .crystal-display img .f {
+  transform: rotate(-8.18deg);
+}
+#section-crystaldiscovery .crystal-display img .g {
+  transform: rotate(8.18deg);
+}
+#section-crystaldiscovery .crystal-display img .h {
+  transform: rotate(24.55deg);
+}
+#section-crystaldiscovery .crystal-display img .i {
+  transform: rotate(40.91deg);
+}
+#section-crystaldiscovery .crystal-display img .j {
+  transform: rotate(57.27deg);
+}
+#section-crystaldiscovery .crystal-display img .k {
+  transform: rotate(73.64deg);
+}
+#section-crystaldiscovery .crystal-display img .l {
+  transform: rotate(90deg);
+}
 #section-crystaldiscovery .section-crystaldiscovery {
+  margin: 6.7% 11.5% 9.7% 7.91%;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  justify-items: center;
   gap: 35px;
 }
-#section-crystaldiscovery .discovery-displaytitle {
+#section-crystaldiscovery .section-crystaldiscovery header {
   width: 498px;
   height: 78px;
-  margin: 54px auto 34px;
-  margin-top: 54 auto auto px;
   display: flex;
+  flex-direction: row;
+  justify-items: center;
   align-items: center;
 }
-#section-crystaldiscovery #titlediscovery {
+#section-crystaldiscovery .section-crystaldiscovery header #titlediscovery {
   /* color: #FFF; */
   font-size: 28px;
   width: 498px;
@@ -440,14 +472,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#section-crystaldiscovery .crystaldiscovery {
-  /* border: 3px solid #fff; */
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 113px;
+  /* 水晶info */
+  /* 主要功效 */
+  /* 適合人群 */
+  /* 建議水晶 */
 }
-#section-crystaldiscovery .crystal {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal {
   width: 600px;
   height: 118px;
   padding: 20px 35px;
@@ -461,7 +495,7 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .crystal .crystal-name {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .crystal-name {
   width: 117px;
   height: 78px;
   padding: 0 24px 0 0;
@@ -471,20 +505,20 @@ body {
   justify-content: center;
   align-items: center;
 }
-#section-crystaldiscovery .crystal .crystal-name .crystal-enname {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .crystal-name .crystal-enname {
   font-size: 20px;
 }
-#section-crystaldiscovery .crystal .crystal-name .crystal-chname {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .crystal-name .crystal-chname {
   font-size: 28px;
 }
-#section-crystaldiscovery .crystal .discovery-content {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .crystal .discovery-content {
   font-size: 100%;
   width: 389px;
   height: 78px;
   padding: 0 0 0 24px;
   margin: none;
 }
-#section-crystaldiscovery .discovery-p1 {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p1 {
   width: 600px;
   height: 164px;
   padding: 20px 35px;
@@ -498,7 +532,8 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .discovery-title {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p1 h2 {
+  font-size: 20px;
   width: 530px;
   height: 30px;
   padding: 0 0 8px 0;
@@ -506,15 +541,12 @@ body {
   display: flex;
   align-items: center;
 }
-#section-crystaldiscovery .discovery-title h2 {
-  font-size: 20px;
-}
-#section-crystaldiscovery .discovery-p1content {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p1 .discovery-p1content {
   width: 530px;
   height: 78px;
   margin-top: 8px;
 }
-#section-crystaldiscovery .discovery-p2 {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p2 {
   width: 600px;
   height: 138px;
   padding: 20px 35px;
@@ -528,12 +560,21 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .discovery-p2content {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p2 h2 {
+  font-size: 20px;
+  width: 530px;
+  height: 30px;
+  padding: 0 0 8px 0;
+  border-bottom: 1px #FFF solid;
+  display: flex;
+  align-items: center;
+}
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p2 .discovery-p2content {
   width: 530px;
   height: 52px;
   margin-top: 8px;
 }
-#section-crystaldiscovery .discovery-p3 {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 {
   width: 600px;
   height: 76px;
   padding: 20px 35px;
@@ -546,21 +587,19 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(233, 166, 160, 0.3);
   backdrop-filter: blur(2.5px);
 }
-#section-crystaldiscovery .discovery-p3 .discovery-p3title {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 h2 {
+  font-size: 20px;
   width: 125px;
   height: 30px;
   /* border: 1px #FFF solid; */
   display: flex;
   align-items: center;
 }
-#section-crystaldiscovery .discovery-p3 .discovery-p3title h2 {
-  font-size: 20px;
-}
-#section-crystaldiscovery .discovery-p3 .discovery-imgbox {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 .discovery-imgbox {
   display: flex;
   gap: 12px;
 }
-#section-crystaldiscovery .discovery-p3 .discovery-img {
+#section-crystaldiscovery .section-crystaldiscovery .crystaldiscovery .discovery-p3 .discovery-imgbox .discovery-img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
