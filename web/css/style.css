@@ -134,9 +134,9 @@ body {
   background-color: rgb(69, 57, 157);
 }
 
+/*ALL*/
 /*封面1*/
 .ch-cover {
-  width: 100vw;
   height: 100vh;
   border: 2px solid #FFF;
 }
@@ -199,7 +199,6 @@ body {
 
 /*封面2*/
 .section-starttest {
-  width: 100vw;
   height: 100vh;
   border: #FFF 2px solid;
   display: flex;
@@ -260,7 +259,6 @@ body {
 
 /*憑直覺抽一張吧*/
 #section-tarotcard {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -394,7 +392,6 @@ body {
 
 /*水晶小百科*/
 #section-crystaldiscovery {
-  width: 100vw;
   height: 100vh;
   border: #FFF 2px solid;
   color: #FFF;
