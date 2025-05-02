@@ -142,7 +142,7 @@ body {
 
 
 /*ALL*/
-section{
+section {
     // height: 100vh;
 }
 
@@ -150,7 +150,7 @@ section{
 .ch-cover {
     // width: 100vw;
     height: 100vh;
-    border: 2px solid #FFF;
+    // border: 2px solid #FFF;
 
     .cover-box {
         display: flex;
@@ -198,6 +198,7 @@ section{
         .deco2 {
             width: 22px;
             height: 38px;
+            transform: rotate(33deg);
 
             // 定位
             position: absolute;
@@ -208,6 +209,7 @@ section{
         .deco3 {
             width: 34px;
             height: 60px;
+            transform: rotate(49deg);
 
             // 定位
             position: absolute;
@@ -234,27 +236,38 @@ section{
 .section-starttest {
     // width: 100vw;
     height: 100vh;
-    border: #FFF 2px solid;
+    // border: #FFF 2px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     gap: 50.2px;
 
+    #numbg { //數字背景
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
 
     .startbox1 {
+        width: 100vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-content: center;
-        // position: relative;
-        gap: 75%;
+        gap: 8.3%;
+        // border: #FFF 2px solid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
 
         .left {
             width: 305.66px;
             height: 649.91px;
             // 定位
-            position: relative;
-            left: 18.7%;
+            // position: absolute;
+            left: 28%;
             top: 0;
         }
 
@@ -262,8 +275,8 @@ section{
             width: 316.46px;
             height: 649.72px;
             // 定位
-            position: relative;
-            right: 18.1%;
+            // position: absolute;
+            right: 28%;
             top: 0;
         }
     }
@@ -294,7 +307,6 @@ section{
             // left: 33.1%;
             // top: 79.1%;
         }
-
     }
 
     .bling {
@@ -487,7 +499,7 @@ section{
 #section-crystaldiscovery {
     // width: 100vw;
     height: 100vh;
-    border: #FFF 2px solid;
+    // border: #FFF 2px solid;
     color: #FFF;
     // margin: 6.7% 11.5% 3.1% 0;
     display: flex;
@@ -505,12 +517,12 @@ section{
         width: 40%;
         height: 691px;
         ////////////////////////////////////////////////////
-        border: 1px #FFF solid;
+        // border: 1px #FFF solid;
 
         .circle {
             position: absolute;
-            top: 70%;
-            left: 50%;
+            top: 80%;
+            left: 35%;
             width: 100px;
             height: 100px;
             object-fit: cover;
@@ -554,6 +566,7 @@ section{
             transform: rotate(240deg);
         }
 
+        /*藍晶石*/
         .circle:nth-child(10) {
             transform: rotate(270deg);
             width: 150px;
@@ -561,21 +574,24 @@ section{
             position: relative;
 
             &::before {
-                width: 48px;
-                height: 48px;
+                width: 68px;
+                height: 68px;
+                content: '';
                 background-image: url(../images/icon_btn_up.ico.svg);
-                display: block;
+                // display: block;
                 position: absolute;
-                top: 50px;
-                right: 200px;
+                // top: 50px;
+                right: 17px;
+
             }
 
             &::after {
                 width: 48px;
+
                 height: 48px;
                 background-image: url(../images/icon_btn_down.ico.svg);
                 display: flex;
-                flex-direction:row ;
+                flex-direction: row;
                 justify-items: center;
                 align-items: center;
                 display: block;
