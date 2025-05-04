@@ -137,20 +137,105 @@ a {
 }
 
 body {
+    // width: 1440px;
+    // height: 4755px;
+    // border: 5px #FFF solid;
+    position: relative;
+
+    .bgdark1 {
+        background-image: url(../images/background-dark1.svg);
+        background-repeat: no-repeat;
+        width: 3690px;
+        height: 2201px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        // background-size: cover;
+        // background-position: center;
+        // background-repeat: no-repeat;
+    }
+
+
+    .bglight {
+        background-image: url(../images/background-light.svg);
+        position: absolute;
+        left: 0;
+        top: 297%;
+
+        // width: 100%;
+        // height: 100%;
+    }
+
+    .bgdark2 {
+        background-image: url(../images/background-dark2.svg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+
+        // background-size: cover;
+        // background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
     background-color: rgba(69, 57, 157, 1);
 }
 
 
-/*ALL*/
-section {
-    // height: 100vh;
+/*menu bar*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.22) 23.56%, rgba(0, 0, 0, 0.06) 64.9%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(1px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.na v ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./public/image/背景材質.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /*封面1*/
 .ch-cover {
     // width: 100vw;
+    // background-image: url(../images/background-dark1.jpg);
     height: 100vh;
     // border: 2px solid #FFF;
+    position: relative;
 
     .cover-box {
         display: flex;
@@ -198,8 +283,7 @@ section {
         .deco2 {
             width: 22px;
             height: 38px;
-            transform: rotate(33deg);
-
+            transform: rotate(36deg);
             // 定位
             position: absolute;
             left: 62.8%;
@@ -209,7 +293,8 @@ section {
         .deco3 {
             width: 34px;
             height: 60px;
-            transform: rotate(49deg);
+            transform: rotate(54deg);
+
 
             // 定位
             position: absolute;
@@ -234,7 +319,6 @@ section {
 
 /*封面2*/
 .section-starttest {
-    // width: 100vw;
     height: 100vh;
     // border: #FFF 2px solid;
     display: flex;
@@ -243,41 +327,20 @@ section {
     position: relative;
     gap: 50.2px;
 
-    #numbg { //數字背景
-        display: flex;
-        justify-items: center;
-        align-items: center;
-    }
-
     .startbox1 {
-        width: 100vw;
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-content: center;
-        gap: 8.3%;
-        // border: #FFF 2px solid;
-        position: absolute;
-        top: 0;
-        left: 0;
-        
+        gap: 35%;
 
         .left {
             width: 305.66px;
             height: 649.91px;
-            // 定位
-            // position: absolute;
-            left: 28%;
-            top: 0;
         }
 
         .right {
             width: 316.46px;
             height: 649.72px;
-            // 定位
-            // position: absolute;
-            right: 28%;
-            top: 0;
         }
     }
 
@@ -286,27 +349,25 @@ section {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        gap: 82px;
-        position: absolute;
-        left: 38.1%;
-        top: 25.6%;
+        gap: 22.2px;
 
-        .startbtn {
-            width: 152.49px;
-            height: 346.82px;
-            // display: block;
-            // position: absolute;
-            // left: 44.7%;
-            // top: 26.1%;
-        }
-
-        .starttest-p {
+        p {
             color: #FFF;
             font-size: 24px;
-            // position: absolute;
-            // left: 33.1%;
-            // top: 79.1%;
         }
+
+        .scroll {
+            width: 28.5px;
+            height: 97.1px;
+        }
+    }
+
+    .startbtn {
+        width: 152.49px;
+        height: 346.82px;
+        position: absolute;
+        left: 44.7%;
+        top: 25.6%;
     }
 
     .bling {
@@ -314,20 +375,21 @@ section {
         height: 402.37px;
 
         position: absolute;
-        left: 38%;
-        top: 26.8%;
+        left: 34%;
+        top: 27.8%;
+    }
+
+    .numbg {
+        width: 1127.82px;
+        height: 707.42px;
+
+        position: absolute;
+        left: 11.3%;
+        top: 6.7%;
 
     }
 
-    .scroll {
-        width: 28.5px;
-        height: 97.1px;
 
-        // 定位
-        // position: relative;
-        // left: 49%;
-        // top: 86.4px;
-    }
 }
 
 /*憑直覺抽一張吧*/
@@ -345,7 +407,7 @@ section {
         justify-content: center;
         align-items: center;
 
-        gap: 7.5%; /////////////////////////////////////////////////////
+        gap: 60px; /////////////////////////////////////////////////////
 
         #tarotcard-title {
             color: #fff;
@@ -386,7 +448,6 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
-            // gap: -110px;
 
             .cardchild-1 {
                 width: 280px;
@@ -407,17 +468,22 @@ section {
         #tarotcard-btn {
             width: 283px;
             height: 70px;
-            padding: 20px 100px;
+            // padding: 20px 100px;
             // margin-bottom: 72.18px;
             display: flex;
             justify-content: center; //items or content
             align-items: center;
+
             /*樣式*/
             color: #fff;
             background-color: transparent;
             border-radius: 1000px;
             border: 2px solid #8750BF;
             backdrop-filter: blur(2px);
+
+            a{
+                color: #fff;
+            }
         }
     }
 }
@@ -482,7 +548,6 @@ section {
     }
 
     button {
-        color: #fff;
         width: 264px;
         height: 57px;
         /* 玻璃擬態 */
@@ -491,6 +556,10 @@ section {
         background: rgba(255, 255, 255, 0.25);
         box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 15px 2px rgba(233, 166, 160, 0.30);
         backdrop-filter: blur(25px);
+
+        a {
+            color: #FFF;
+        }
     }
 }
 
@@ -505,6 +574,8 @@ section {
     display: flex;
     justify-content: start;
     align-items: center;
+
+    // position: relative;。。
     /* margin: none; */
 
     .crystal-display {
@@ -522,7 +593,7 @@ section {
         .circle {
             position: absolute;
             top: 80%;
-            left: 35%;
+            left: 13%;
             width: 100px;
             height: 100px;
             object-fit: cover;
@@ -566,7 +637,6 @@ section {
             transform: rotate(240deg);
         }
 
-        /*藍晶石*/
         .circle:nth-child(10) {
             transform: rotate(270deg);
             width: 150px;
@@ -574,21 +644,20 @@ section {
             position: relative;
 
             &::before {
-                width: 68px;
-                height: 68px;
-                content: '';
+                content: "";
+                width: 60px;
+                height: 60px;
                 background-image: url(../images/icon_btn_up.ico.svg);
-                // display: block;
+                display: block;
                 position: absolute;
-                // top: 50px;
-                right: 17px;
-
+                top: -74px;
+                right: 61px;
             }
 
             &::after {
-                width: 48px;
-
-                height: 48px;
+                content: "";
+                width: 60px;
+                height: 60px;
                 background-image: url(../images/icon_btn_down.ico.svg);
                 display: flex;
                 flex-direction: row;
@@ -596,8 +665,8 @@ section {
                 align-items: center;
                 display: block;
                 position: absolute;
-                top: 330px;
-                right: 66px;
+                top: 164px;
+                right: 61px;
             }
         }
 
@@ -608,7 +677,6 @@ section {
         .circle:nth-child(12) {
             transform: rotate(330deg);
         }
-
     }
 }
 
@@ -907,4 +975,81 @@ section {
             }
         }
     }
+}
+
+/*footer*/
+.footer {
+    border-radius: 60px 60px 0 0;
+    background-image: url('./public/image/footer背景.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-content>div {
+    flex: 1 1 200px;
+    max-width: 300px;
+    text-align: left;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+}
+
+
+
+.footer h3 {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.contact p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+}
+
+/* 版權 */
+.copyright {
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
 }
