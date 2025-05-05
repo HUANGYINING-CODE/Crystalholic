@@ -142,22 +142,23 @@ body {
     // border: 5px #FFF solid;
     position: relative;
 
-    .bgdark1 {
+    // .bgdark1 {
         background-image: url(../images/background-dark1.svg);
         background-repeat: no-repeat;
-        width: 3690px;
-        height: 2201px;
+        width: 100%;
+        height: 300vh;
         position: absolute;
         top: 0%;
         left: 0%;
+        z-index: -1;
 
         // background-size: cover;
         // background-position: center;
         // background-repeat: no-repeat;
-    }
+    // }
 
 
-    .bglight {
+    // .bglight {
         background-image: url(../images/background-light.svg);
         position: absolute;
         left: 0;
@@ -165,9 +166,9 @@ body {
 
         // width: 100%;
         // height: 100%;
-    }
+    // }
 
-    .bgdark2 {
+    // .bgdark2 {
         background-image: url(../images/background-dark2.svg);
         width: 100%;
         height: 100%;
@@ -179,7 +180,7 @@ body {
         // background-position: center;
         background-repeat: no-repeat;
 
-    }
+    // }
 
     background-color: rgba(69, 57, 157, 1);
 }
