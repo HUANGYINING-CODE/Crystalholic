@@ -130,9 +130,24 @@ a {
   text-decoration: none;
 }
 
+/* ------字體------ */
+body {
+  font-family: "LXGW WenKai Mono TC";
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+body *:lang(en) {
+  font-family: "Lora", "Georgia", serif;
+  letter-spacing: 2px;
+}
+
 body {
   position: relative;
-  background-image: url(../images/background-dark1.svg);
+}
+body .bgdark1 {
+  background-image: url(../images/bg1.svg);
   background-repeat: no-repeat;
   width: 100%;
   height: 300vh;
@@ -140,18 +155,19 @@ body {
   top: 0%;
   left: 0%;
   z-index: -1;
-  background-image: url(../images/background-light.svg);
-  position: absolute;
-  left: 0;
-  top: 297%;
-  background-image: url(../images/background-dark2.svg);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0%;
+  background-size: cover;
+}
+body .bgdark2 {
+  background-image: url(../images/bg2.svg);
   background-repeat: no-repeat;
-  background-color: rgb(69, 57, 157);
+  width: 100%;
+  height: 36.5%;
+  position: absolute;
+  top: 63.6%;
+  left: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
 }
 
 /*menu bar*/
@@ -384,14 +400,14 @@ body {
   justify-content: center;
   align-items: center;
   /*樣式*/
-  color: #fff;
+  color: #8750BF;
   background-color: transparent;
   border-radius: 1000px;
   border: 2px solid #8750BF;
   backdrop-filter: blur(2px);
 }
 #section-tarotcard .tarotcard #tarotcard-btn a {
-  color: #fff;
+  color: #8750BF;
 }
 
 /*訂製專屬手鍊*/
@@ -462,7 +478,7 @@ body {
 /*水晶小百科*/
 #section-crystaldiscovery {
   height: 100vh;
-  color: #FFF;
+  color: #8750BF;
   display: flex;
   justify-content: start;
   align-items: center;

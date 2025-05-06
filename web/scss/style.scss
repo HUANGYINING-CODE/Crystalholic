@@ -136,14 +136,30 @@ a {
     text-decoration: none;
 }
 
+
+/* ------字體------ */
+
+body {
+    font-family: 'LXGW WenKai Mono TC';
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+body *:lang(en) {
+    font-family: 'Lora', 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+
 body {
     // width: 1440px;
     // height: 4755px;
     // border: 5px #FFF solid;
     position: relative;
 
-    // .bgdark1 {
-        background-image: url(../images/background-dark1.svg);
+    .bgdark1 {
+        background-image: url(../images/bg1.svg);
         background-repeat: no-repeat;
         width: 100%;
         height: 300vh;
@@ -151,38 +167,25 @@ body {
         top: 0%;
         left: 0%;
         z-index: -1;
+        background-size: cover;
 
-        // background-size: cover;
-        // background-position: center;
-        // background-repeat: no-repeat;
-    // }
+    }
 
-
-    // .bglight {
-        background-image: url(../images/background-light.svg);
-        position: absolute;
-        left: 0;
-        top: 297%;
-
-        // width: 100%;
-        // height: 100%;
-    // }
-
-    // .bgdark2 {
-        background-image: url(../images/background-dark2.svg);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0%;
-
-        // background-size: cover;
-        // background-position: center;
+    .bgdark2 {
+        background-image: url(../images/bg2.svg);
         background-repeat: no-repeat;
+        width: 100%;
+        height: 36.5%;
+        position: absolute;
+        top: 63.6%;
+        left: 0;
+        z-index: -1;
 
-    // }
+        background-position: center;
+        background-size: cover;
+    }
 
-    background-color: rgba(69, 57, 157, 1);
+    // background-color: #000;
 }
 
 
@@ -476,14 +479,14 @@ body {
             align-items: center;
 
             /*樣式*/
-            color: #fff;
+            color: #8750BF;
             background-color: transparent;
             border-radius: 1000px;
             border: 2px solid #8750BF;
             backdrop-filter: blur(2px);
 
-            a{
-                color: #fff;
+            a {
+                color: #8750BF;
             }
         }
     }
@@ -570,7 +573,7 @@ body {
     // width: 100vw;
     height: 100vh;
     // border: #FFF 2px solid;
-    color: #FFF;
+    color: #8750BF;
     // margin: 6.7% 11.5% 3.1% 0;
     display: flex;
     justify-content: start;
@@ -1040,6 +1043,25 @@ body {
 .social-icons img {
     width: 48px;
     height: 48px;
+
+    // //hover要用JS寫// //
+    // .line {
+    //     &:hover {
+    //         content: url("../images/sns-line-state-hover.svg"); // 換圖片
+    //     }
+    // }
+
+    // .ig {
+    //     &:hover {
+    //         content: url("../images/sns-ig-state-hover.svg"); // 換圖片
+    //     }
+    // }
+
+    // .fb {
+    //     &:hover {
+    //         content: url("../images/sns-fb-state-hover.svg"); // 換圖片
+    //     }
+    // }
 }
 
 /* 版權 */
