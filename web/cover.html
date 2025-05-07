@@ -14,8 +14,8 @@
     <!-- <div class="bglight"></div> -->
     <div class="bgdark2"></div>
     <!-- menu bar -->
-    <header class="header">
-        <div class="logo"><a href="#"><img src="./images/logotext_nav.ico.svg" alt=""></a></div>
+    <header id="header">
+        <!-- <div class="logo"><a href="#"><img src="./images/logotext_nav.ico.svg" alt=""></a></div>
         <nav class="nav">
             <ul>
                 <li><a href="#"><img src="./images/icon_search.ico.svg" alt=""></a></li>
@@ -23,8 +23,16 @@
                 <li><a href="#"><img src="./images/icon_member.ico.svg" alt=""></a></li>
                 <li><a href="./menu-index.html"><img src="./images/icon_bgrbtn.ico.svg" alt=""></a></il>
             </ul>
-        </nav>
+        </nav> -->
     </header>
+
+    <script>
+        fetch('nav.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('header').innerHTML = html;
+          });
+      </script>
 
     <!-- 封面1 -->
     <section class="ch-cover">
@@ -271,8 +279,8 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer">
-        <div class="footer-content">
+    <footer id="footer">
+        <!-- <div class="footer-content">
             <div class="company">
                 <h3>COMPANY</h3>
                 <ul>
@@ -309,7 +317,15 @@
         <div class="copyright">
             <p>2025 &copy; Crystalholic All Rights Reserved.</p>
         </div>
-    </footer>
+    </footer> -->
+
+    <script>
+        fetch('footer.html')
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById('footer').innerHTML = html;
+          });
+      </script>
 
     <script></script>
 </body>

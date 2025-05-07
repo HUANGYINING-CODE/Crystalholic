@@ -147,7 +147,7 @@ body {
   position: relative;
 }
 body .bgdark1 {
-  background-image: url(../images/bg1.svg);
+  background-image: url(../images/cover\ bg1.svg);
   background-repeat: no-repeat;
   width: 100%;
   height: 300vh;
@@ -158,7 +158,7 @@ body .bgdark1 {
   background-size: cover;
 }
 body .bgdark2 {
-  background-image: url(../images/bg2.svg);
+  background-image: url(../images/cover\ bg2.svg);
   background-repeat: no-repeat;
   width: 100%;
   height: 36.5%;
