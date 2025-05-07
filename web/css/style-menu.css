@@ -130,9 +130,25 @@ a {
   text-decoration: none;
 }
 
+/* ------字體------ */
+body {
+  font-family: "LXGW WenKai Mono TC";
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+body *:lang(en) {
+  font-family: "Lora", "Georgia", serif;
+  letter-spacing: 2px;
+}
+
 /*全文底色*/
 body {
-  background-image: url(../images/background-dark1.svg);
+  background-image: url(../images/menu-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: fill;
   color: #fff;
 }
 
