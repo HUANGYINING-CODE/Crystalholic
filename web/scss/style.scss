@@ -140,15 +140,15 @@ a {
 /* ------字體------ */
 
 body {
-    font-family: 'LXGW WenKai Mono TC';
+    font-family: 'Lora-Italic', 'Georgia', "LXGW WenKai Mono TC", serif; //serif 套系統有襯線字
     font-weight: 100;
     line-height: 1.5;
     letter-spacing: 2px;
-}
 
-body *:lang(en) {
-    font-family: 'Lora', 'Georgia', serif;
-    letter-spacing: 2px;
+    // font-family: 'LXGW WenKai Mono TC';
+    // font-weight: 100;
+    // line-height: 1.5;
+    // letter-spacing: 2px;
 }
 
 
@@ -236,9 +236,7 @@ body {
 /*封面1*/
 .ch-cover {
     // width: 100vw;
-    // background-image: url(../images/background-dark1.jpg);
     height: 100vh;
-    // border: 2px solid #FFF;
     position: relative;
 
     .cover-box {
@@ -261,6 +259,13 @@ body {
             color: #FFF;
             font-size: 24px;
 
+            span {
+                // font-family: 'LXGW WenKai Mono TC';
+                font-weight: 100;
+                line-height: 1.5%;
+                letter-spacing: 8px;
+            }
+
             .cover1 {
                 font: size 24px;
                 writing-mode: vertical-rl;
@@ -269,7 +274,9 @@ body {
                 // 定位
                 position: absolute;
                 left: 43.4%;
-                top: 7.3%;
+                top: 16.1%;
+
+                
             }
 
             .cover2 {
@@ -280,7 +287,7 @@ body {
                 // 定位
                 position: absolute;
                 left: 52.7%;
-                top: 19.8%;
+                top: 28.6%;
             }
         }
 
